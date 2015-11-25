@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id_TitreConifere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Identifier un conifère"/>
+    <TextView
+        android:id="@+id/id_message_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="40dp"
+        android:text="Les conifères ont des feuilles en forme d'aiguille ou d'écaille"/>
+
+    <TextView
+        android:id="@+id/id_message_choix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Choisissez la forme appropriée."/>
+    <ListView
+        android:id="@+id/id_list_forme"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:choiceMode="singleChoice"
+        android:entries="@array/tab_choix_aiguilles"/>
+    <TextView
+        android:id="@+id/id_resultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="5dp"
+        />
+
+</LinearLayout>

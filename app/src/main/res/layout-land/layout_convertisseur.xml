@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/id_titreConv"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/titre_convertisseur"
+
+
+            />
+        <LinearLayout
+            android:layout_width="600dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/id_pays_entrant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_weight="30"
+                android:src="@drawable/canada"/>
+            <ImageView
+                android:id="@+id/id_image_fleche"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_weight="30"
+                android:src="@drawable/fleche"/>
+
+            <ImageView
+                android:id="@+id/id_pays_sortant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_weight="30"
+                android:src="@drawable/canada"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/id_spinEntrer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:entries="@array/tab_pays"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+            <Spinner
+                android:id="@+id/id_spinSorti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:entries="@array/tab_pays"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/id_montantEntrer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/entrezMontant"/>
+
+        <TextView
+            android:id="@+id/id_titre_txchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/tx_change"/>
+        <TextView
+            android:id="@+id/id_txchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text=""/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/id_btn_calc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:layout_weight="70"
+                android:text="@string/buttonCalculer"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <!--Mettre ici votre layout.-->
+    <ListView android:id="@+id/list_navigation"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFEEEEEE"
+        android:choiceMode="singleChoice"
+        android:entries="@array/tab_activites" />
+</android.support.v4.widget.DrawerLayout>

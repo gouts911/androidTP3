@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/id_titrePret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/calculerPret"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/id_titreMontant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:text="@string/montantPret"/>
+        <EditText
+            android:id="@+id/id_Montant"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="40"
+            android:hint="@string/entrezMontant"
+            android:inputType="numberDecimal" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/id_titreTaux"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:text="@string/tauxAnnuel"/>
+        <EditText
+            android:id="@+id/id_tx"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="40"
+            android:hint="@string/entrezTaux"
+            android:inputType="numberDecimal" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/id_titreDuree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:text="@string/duree"/>
+        <Spinner
+            android:id="@+id/id_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:entries="@array/tab_duree"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/id_btn_calc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:layout_gravity="center"
+            android:text="@string/buttonCalculer"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/id_btn_effacer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:layout_gravity="center"
+            android:text="@string/buttonEffacer"
+            android:textAllCaps="false"
+            />
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

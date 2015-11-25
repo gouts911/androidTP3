@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">TP3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="titre">Application contenant plusieurs activité</string>
+
+    <string name="choix">Choisissez le conifère approprié</string>
+
+    <string name="identifier">Identifier un conifère</string>
+    <string name="feuilles">Les conifères ont des feuilles en forme
+        d\'aiguilles ou d\'écailles</string>
+    <string name="forme">Choisissez la forme appropriée.</string>
+
+    <string name="calculerPret">Calculer un prêt</string>
+    <string name="montantPret">Montant du prêt (en $)</string>
+    <string name="entrezMontant">Entrez le montant</string>
+    <string name="tauxAnnuel">Taux d\'intérêt annuel(en %)</string>
+    <string name="entrezTaux">Entrez le taux d\'intérêt</string>
+    <string name="duree">Durée du prêt</string>
+    <string name="buttonCalculer">Calculer</string>
+    <string name="buttonEffacer">Effacer</string>
+
+    <string name="renseignement">Renseignement sur un prêt</string>
+    <string name="dureeMois">Durée du prêt (en mois)</string>
+    <string name="versement">Versement mensuel (en $)</string>
+    <string name="interet">Intérêt total (en $)</string>
+    <string name="pretTotal">prêt total (en $)</string>
+    <string name="buttonRetour">Retour</string>
+    <string name="ouvrir_menu">Ouvrir</string>
+    <string name="fermer_menu">Fermer</string>
+    <string name="titre_convertisseur">Convertisseur de devise</string>
+    <string name="titre_rensconv">Résultat de la convertion</string>
+    <string name="tx_change">Taux de change (%)</string>
+    <string name="montantentrant">Montant à convertir ($)</string>
+    <string name="montantsortant">Montant après convertion ($)</string>
+
+</resources>
